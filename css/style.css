@@ -1,0 +1,31 @@
+/* common */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.l-container{
+
+}
+
+.m-container{
+
+}
+
+.small-content{
+
+}
+
+.large-content{
+
+}
+
+/* header */
+
+/* top-bar */
+
+.top-bar{
+    display: flex;
+    justify-content: space-between;
+}
