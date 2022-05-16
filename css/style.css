@@ -7,7 +7,7 @@
 
 /* containers  */
 .l-container{
-
+    
 }
 
 .m-container{
@@ -19,18 +19,12 @@
 }
 
 .small-content{
-
+    width: 30%;
 }
 
 .large-content{
-
+  width: 70%;  
 }
-
-/* buttons */
-.btn{
-
-}
-
 
 ul li{
     list-style: none;
@@ -41,10 +35,16 @@ a{
     color: black;
 }
 
+img{
+    width: 100%;
+}
+
 /* buttons */
 .btn{
     background-color: blue;
     color: white;
+    padding: 15px;
+    display: inline-block;
 }
 
 /* header */
@@ -57,6 +57,7 @@ a{
     width: 100vw;
     position: fixed;
     background-color: white;
+    overflow-y: auto;
 }
 
 .left-info{
@@ -76,12 +77,13 @@ a{
 }
 
 .left-info li, .right-info li{
-    /* padding: 10px; */
-    padding: 20px 15px;
+    padding: 20px 10px;
+    margin: 0 10px 0 0;
+    flex-shrink: 1;
 }
 
 .left-info li a, .right-info li a{
-    padding: 10px;
+    padding: 10px 15px;
     display: inline-block;
 }
 
@@ -94,5 +96,32 @@ a{
 .jumbotron{
     padding-top: 10vh;
     background-color: #B4D0E7;
-    height: 100vh;
+    width: 100vw;
+}
+
+.j-content{
+    max-width: 1000px;
+    text-align: left;
+    margin: 0 auto;
+    position: relative;
+    top: 12vh;
+}
+
+.j-content h1{
+    font-size: 4rem;
+    margin-bottom: 4vh;
+}
+
+.l-container{
+    display: flex;
+    margin-top: 2vh;
+}
+
+.l-container p, .l-container .btn, .l-container div{
+    font-size: 1.10rem;
+    margin: 0 0 3vh 0;
+}
+
+.l-container i{
+    font-size: 3rem;
 }
