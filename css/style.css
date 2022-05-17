@@ -274,3 +274,19 @@ main section{
     color: black;
     border: 1px solid black;
 }
+
+/* section 3  */
+
+.flow-r-betw.cards{
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.card{
+    width: calc(100% / 3 - 30px);
+}
+
+.card h3{
+    margin-bottom: 30px; 
+}
+
