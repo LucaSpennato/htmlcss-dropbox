@@ -295,11 +295,13 @@ main section{
 
 .xl-container{
     width: 100%;
-    /* justify-content: space-between; */
+    height: 75vh;
+    justify-content: space-between;
 }
 
 .clients-review, .clients-logos{
     flex-basis: calc(100% / 3);
+    height: 100%;
 }
 
 .clients-logos{
@@ -307,13 +309,14 @@ main section{
     flex-wrap: wrap;
 }
 
-.clients-logos a{
-    /* display: flex;
+.clients-logos div{
+    display: flex;
     justify-content: center;
-    align-items: center;  */
+    align-items: center;
     display: block;
     width: calc(100% / 2);
-    padding: 10vh;
+    height: calc(100% / 2);
+    padding: 30px;
 }
 
 .clients-logos img{
