@@ -316,14 +316,49 @@ main section{
     display: block;
     width: calc(100% / 2);
     height: calc(100% / 2);
-    padding: 30px;
+    padding: 8vh;
 }
 
 .clients-logos img{
-    width: 100%;
+    width: 100%; 
+    display: block;
+    height: 100%;
+    filter: invert(100%);
 }
 
 .clients-review{
     background-color: gray;
 }
 
+.bg1{
+    background-color: #A2D39B;
+}
+
+.bg2{
+    background-color: #61082B;
+}
+
+.bg3{
+    background-color: lightblue;
+}
+
+.bg4{
+    background-color: red;
+}
+
+.bg5{
+    background-color: red;
+}
+
+
+.bg6{
+    background-color: lightgreen;
+}
+
+.bg7{
+    background-color: blue;
+}
+
+.bg8{
+    background-color: yellow;
+}
