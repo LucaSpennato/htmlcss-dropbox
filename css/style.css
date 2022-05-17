@@ -295,8 +295,7 @@ main section{
 
 .xl-container{
     width: 100%;
-    background-color: red;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 .clients-review, .clients-logos{
@@ -308,31 +307,18 @@ main section{
     flex-wrap: wrap;
 }
 
-.clients-logos div{
-    display: flex;
+.clients-logos a{
+    /* display: flex;
     justify-content: center;
-    align-items: center;
-    flex-basis: calc(100% / 2);
+    align-items: center;  */
+    display: block;
+    width: calc(100% / 2);
     padding: 10vh;
 }
 
 .clients-logos img{
     width: 100%;
-} 
-
-/* .clients-logos{
-    display: flex;
-    justify-content:space-around;
-    flex-wrap: wrap;
-    display: inline-block;
-     background-color: blue;
-} */
-
-/* .clients-logos div{
-    background-color: red;
-    width: calc(500px / 2 - 30px);
-} 
- */
+}
 
 .clients-review{
     background-color: gray;
