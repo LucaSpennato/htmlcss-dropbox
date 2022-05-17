@@ -24,6 +24,10 @@ body{
     margin: 20px 0;
 }
 
+.marginup-20vh-fix{
+    margin-top: 20vh;
+}
+
 /* common containers  */
 .m-container{
     width: 50%;
@@ -67,6 +71,13 @@ img{
     color: white;
     padding: 10px;
     display: inline-block;
+}
+
+.btn-long{
+    background-color: blue;
+    color: white;
+    display: inline-block;
+    padding: 10px 30px;
 }
 
 /* font fixes  */
@@ -161,10 +172,6 @@ img{
 /* main  */
 
 /* main first section */
-main section{
-    margin-top: 20vh;
-}
-
 .m-container h2{
     font-size: 2.5rem;
     margin-bottom: 8vh;
@@ -224,9 +231,8 @@ main section{
     margin: 10px 0;
 }
 
-.sub-description .btn{
+.sub-description .btn-long{
     display: block;
-    padding: 10px 30px;
 } 
 
 
@@ -333,7 +339,7 @@ main section{
 }
 
 .clients-logos .bg3{
-    background-color: lightblue;
+    background-color: lightcoral;
 }
 
 .clients-logos .bg4{
@@ -375,3 +381,39 @@ hr{
 }
 
 /* section 6  */
+
+.free-tryal{
+    background-color: lightblue;
+    height: 50vh;
+}
+
+.free-tryal .m-container{
+    height: 100%;
+    align-items: center;
+    align-content: center;
+    gap: 40px;
+}
+
+.free-tryal .small-content{
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+}
+
+.free-tryal h2{
+    color: #61082B;
+    font-size: 2.1875rem;
+}
+
+
+.free-tryal .btn{
+    background-color: white;
+    color: black;
+    padding: 10px 30px;
+}
+
+/* section 7  */
+
+.faq{
+    height: 50vh;
+}
