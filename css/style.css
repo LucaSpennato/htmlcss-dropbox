@@ -154,7 +154,7 @@ img{
 
 .l-container i{
     display: block;
-    margin-top: 70px;
+    margin-top: 50px;
     font-size: 3rem;
 }
 
@@ -313,52 +313,65 @@ main section{
     display: flex;
     justify-content: center;
     align-items: center;
-    display: block;
     width: calc(100% / 2);
     height: calc(100% / 2);
     padding: 8vh;
+    align-items: center;
 }
 
 .clients-logos img{
-    width: 100%; 
-    display: block;
-    height: 100%;
+    width: 100%;
     filter: invert(100%);
 }
 
-.clients-review{
-    background-color: gray;
-}
-
-.bg1{
+.clients-logos .bg1{
     background-color: #A2D39B;
 }
 
-.bg2{
+.clients-logos .bg2{
     background-color: #61082B;
 }
 
-.bg3{
+.clients-logos .bg3{
     background-color: lightblue;
 }
 
-.bg4{
+.clients-logos .bg4{
     background-color: red;
 }
 
-.bg5{
+.clients-logos .bg5{
     background-color: red;
 }
 
-
-.bg6{
+.clients-logos .bg6{
     background-color: lightgreen;
 }
 
-.bg7{
+.clients-logos .bg7{
     background-color: blue;
 }
 
-.bg8{
+.clients-logos .bg8{
     background-color: yellow;
 }
+
+.clients-review{
+    padding: 50px;
+    background-color:#F5F5F5;
+}
+
+.clients-review img{
+width: 55%;
+}
+
+hr{
+    width:20%;
+    background-color: gray;
+}
+
+.clients-review p{
+    margin-bottom: 20px;
+}
+
+/* section 6  */
