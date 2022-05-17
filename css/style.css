@@ -14,6 +14,12 @@ body{
     justify-content: space-between;
 }
 
+.flow-c-betw-wr{
+    display: flex;
+    justify-content: column;
+    flex-wrap: wrap;
+}
+
 /* common containers  */
 .m-container{
     width: 50%;
@@ -39,6 +45,11 @@ ul li{
 a{
     text-decoration: none;
     color: black;
+}
+
+.a-fix{
+    text-decoration: underline;
+    color: blue;
 }
 
 img{
@@ -176,14 +187,16 @@ main section{
     display: inline-block;
 }
 
-.subscription-type{
-    align-items: stretch;
-    gap: 40px;
+/* single subscription card */
+
+.subscription-container{
+    flex-wrap: wrap;
+    gap: 30px;
     text-align: center;
 }
 
 .subscription{
-    flex-basis: calc(100% / 3);
+    flex-basis: calc(100% / 3 - 20px);
     border: 1px solid lightgray;
 }
 
@@ -198,19 +211,35 @@ main section{
     text-align: left;
 }
 
-.sub-type h3, .sub-type div{
+.sub-description .flow-c-betw-wr{
     margin: 10px 0;
 }
 
-.sub-benefits .icon{
-    margin-right: 10px;
-} 
-
-.sub-description a{
+.sub-description .btn{
+    display: block;
     padding: 10px 25px;
-    margin: 0 auto;
+    margin: 20px auto;
 } 
 
 
+.sub-description div li{
+    display: inline-block;
+    padding: 7px 0;
+    display: flex;
+    justify-content: space-between;
+}
 
+.flow-c-betw-wr li i{
+    margin: 3px 5px 0 0;
+}
 
+.hr{
+    margin: 40px 0 40px 0;
+    width: 20%;
+    border-top: 1px solid gray;
+}
+
+.sub-description i[class*="fa-check"]{
+    color: blue;
+    font-size: .9375rem;
+}
