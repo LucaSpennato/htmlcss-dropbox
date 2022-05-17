@@ -20,6 +20,10 @@ body{
     flex-wrap: wrap;
 }
 
+.margin20-0{
+    margin: 20px 0;
+}
+
 /* common containers  */
 .m-container{
     width: 50%;
@@ -27,15 +31,15 @@ body{
 }
 
 .xl-container{
-
+    width: 100vw;
 }
 
 .small-content{
-    width: 30%;
+    width: 35%;
 }
 
 .large-content{
-  width: 70%;  
+  width: 65%;  
 }
 
 ul li{
@@ -133,6 +137,10 @@ img{
     top: 13vh;
 }
 
+.l-container .small-content{
+    padding: 0 15px 0 10px;
+}
+
 .j-content h1{
     font-size: 4rem;
     margin-bottom: 5vh;
@@ -217,8 +225,7 @@ main section{
 
 .sub-description .btn{
     display: block;
-    padding: 10px 25px;
-    margin: 20px auto;
+    padding: 10px 30px;
 } 
 
 
@@ -256,7 +263,14 @@ main section{
     margin-top: 20px;
 }
 
-.team-sub .flow-r-betw>div a{
-    margin: 0;
+/* second section  */
+
+.partner-section{
+    gap: 40px;
 }
 
+.partner-section .btn{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
