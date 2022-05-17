@@ -243,3 +243,20 @@ main section{
     color: blue;
     font-size: .9375rem;
 }
+
+.subscription.team-sub{ 
+    flex-basis: 100%;
+}
+
+.team-sub ul{
+    flex-basis: 70%;
+}
+
+.team-sub ul li:last-child{
+    margin-top: 20px;
+}
+
+.team-sub .flow-r-betw>div a{
+    margin: 0;
+}
+
