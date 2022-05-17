@@ -9,6 +9,11 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
+.flow-r-betw{
+    display: flex;
+    justify-content: space-between;
+}
+
 /* common containers  */
 .m-container{
     width: 50%;
@@ -61,24 +66,21 @@ img{
     color: gray;
 }
 
+.font-wb{
+    font-weight: bold;
+}
+
 
 /* header */
 
 /* top-bar */
 
 .top-bar{
-    display: flex;
-    justify-content: space-between;
     width: 100vw;
     position: fixed;
     background-color: white;
     overflow-y: auto;
     z-index: 1;
-}
-
-.left-info{
-    display: flex;
-    justify-content: space-between;
 }
 
 .right-info{
@@ -89,11 +91,6 @@ img{
     display: inline-block;
     padding: 15px 5px;
     margin: 5px;
-}
-
-.left-info ul, .right-info ul{
-    display: flex;
-    justify-content: space-between;
 }
 
 .left-info li, .right-info li{
@@ -128,10 +125,7 @@ img{
 .j-content h1{
     font-size: 4rem;
     margin-bottom: 5vh;
-}
-
-.jumbotron .l-container{
-    display: flex;
+    font-weight: 900;
 }
 
 .l-container p, .l-container .btn, .l-container div{
@@ -183,8 +177,6 @@ main section{
 }
 
 .subscription-type{
-    display: flex;
-    justify-content: space-between;
     align-items: stretch;
     gap: 40px;
     text-align: center;
@@ -197,7 +189,7 @@ main section{
 
 .subscription span:first-child{
     display: inline-block;
-    margin: 5px;
+    margin: 10px;
 }
 
 .sub-description{
@@ -210,17 +202,7 @@ main section{
     margin: 10px 0;
 }
 
-.sub-price{
-    font-weight: bold;
-}
-
-.benefits{
-    display: flex;
-    justify-content: space-between;
-}
-
 .sub-benefits .icon{
-    display: inline;
     margin-right: 10px;
 } 
 
