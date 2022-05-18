@@ -112,12 +112,10 @@ img{
 /* header */
 
 /* top-bar */
-
 .top-bar{
     width: 100vw;
     position: fixed;
     background-color: white;
-    overflow-y: auto;
     z-index: 1;
     box-shadow: 0px 10px 10px -2px rgba(80,80,80,0.6);
 }
@@ -142,8 +140,41 @@ img{
     display: inline-block;
 }
 
-.left-info li:hover, .right-info li:hover{
+.left-info>ul>li:hover, .right-info>ul>li:hover{
     border-bottom: 2px solid blue;
+}
+
+/* dropdown-bonus */
+
+.dropdown{
+    display: flex;
+    opacity: 0;
+    height: 10px;
+    overflow: hidden;
+    justify-content: space-around;
+    position: absolute;
+    top: 100%;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid gray;
+    transition: all 0.6s linear;
+}
+
+.dropdown ul{
+    margin-right: 30px;
+} 
+
+.dropdown li{
+    cursor: pointer;
+}
+
+.drop:hover .dropdown{
+    height: 300px;
+    opacity: 1;
+}
+
+.right-info .drop:hover .dropdown{
+    height: 200px;
 }
 
 /* jumbotron */
@@ -452,12 +483,22 @@ hr{
 .faq .answer{
     display: none;
     font-weight: lighter;
-    padding-top: 20px
+    padding-top: 20px;
+    /* height: 1px; */
+    /* overflow: hidden; */
+    /* transition: all 200ms linear; */
+    /* position: absolute; */
+    /* prova con effettino, 
+    il testo scompare troppo lentamente
+    un'animazione sarebbe overkill */
 }
 
-.question i[class*='fa-chevron-up']{
-    display: none;
+.faq .question:hover .answer{
+    display: inline-block;
+    /* height: 70px; */
+    /* position: static; */
 }
+
 
 .question i{
     position: absolute;
@@ -466,8 +507,8 @@ hr{
     right: 20px;
 }
 
-.faq .question:hover .answer{
-    display: inline-block;
+.question i[class*='fa-chevron-up']{
+    display: none;
 }
 
 .faq .question:hover i[class*='fa-chevron-up']{
@@ -522,6 +563,8 @@ footer .language-selection span{
     padding: 2px;
     cursor: pointer;
 }
+
+/* bonus dropup */
 
 .drop-up{
     opacity: 0;
