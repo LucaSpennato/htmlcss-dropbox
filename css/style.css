@@ -5,6 +5,13 @@
     box-sizing: border-box;
 }
 
+/* .list-icon::before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    margin-right: 5px;
+} */
+
+
 body{
     font-family: 'Open Sans', sans-serif;
 }
@@ -24,8 +31,8 @@ body{
     margin: 20px 0;
 }
 
-.marginup-20vh-fix{
-    margin-top: 20vh;
+.paddingup-20vh-fix{
+    padding-top: 20vh;
 }
 
 /* common containers  */
@@ -108,6 +115,7 @@ img{
     background-color: white;
     overflow-y: auto;
     z-index: 1;
+    box-shadow: 0px 10px 10px -2px rgba(80,80,80,0.6);
 }
 
 .right-info{
@@ -131,7 +139,7 @@ img{
 }
 
 .left-info li:hover, .right-info li:hover{
-    border-bottom: 1px solid blue;
+    border-bottom: 2px solid blue;
 }
 
 /* jumbotron */
@@ -300,8 +308,7 @@ img{
 /* section 5  */
 
 .xl-container{
-    width: 100%;
-    height: 75vh;
+    height: 70vh;
     justify-content: space-between;
 }
 
@@ -323,6 +330,10 @@ img{
     height: calc(100% / 2);
     padding: 8vh;
     align-items: center;
+}
+
+.clients-logos div:hover{
+    box-shadow: inset 0px 0px 0px 10px rgba(233, 233, 233, 0.6);
 }
 
 .clients-logos img{
@@ -364,11 +375,12 @@ img{
 
 .clients-review{
     padding: 50px;
+    overflow-y: auto;
     background-color:#F5F5F5;
 }
 
 .clients-review img{
-width: 55%;
+    width: 55%;
 }
 
 hr{
@@ -417,3 +429,55 @@ hr{
 .faq{
     height: 50vh;
 }
+
+.faq h2{
+    font-size: 2.1875rem;
+}
+
+.faq .question{
+    position: relative;
+    padding: 30px 0;
+    border-top: 1px solid gray;
+    font-weight: bold;
+}
+
+.faq .question:last-child{
+    border-bottom: 1px solid gray;
+}
+
+.faq .answer{
+    display: none;
+    font-weight: lighter;
+    padding-top: 20px
+}
+
+.question i[class*='fa-chevron-up']{
+    display: none;
+}
+
+.question i{
+    position: absolute;
+    margin-top: 30px;
+    top: 0;
+    right: 20px;
+}
+
+.faq .question:hover .answer{
+    display: inline-block;
+}
+
+.faq .question:hover i[class*='fa-chevron-up']{
+    display: inline-block;
+}
+
+.faq .question:hover i[class*='fa-chevron-down']{
+    display: none;
+}
+
+/* footer */
+
+
+footer{
+    height: 100vh;
+}
+
